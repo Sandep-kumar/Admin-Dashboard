@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashbaord</title>
+
+    <!-- font style link -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end -->
+
+    <!-- linking css files -->
+    <link rel="stylesheet" href="style.css">
+    <!-- end  -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                        <span class="title">
+                            <h2>Brand name</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"> <i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Custmors</span>
+                    </a>
+                </li>
+                <li class="itme1">
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li class="itme1">
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li class="itme1">
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li class="itme1">
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg" height="70">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardNam">Daily View</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardNam">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">208</div>
+                        <div class="cardNam">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$6,042</div>
+                        <div class="cardNam">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Delivered </span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Window Cooler</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td> <span class="status pending"> Pending </span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Speakers</td>
+                                <td>$620</td>
+                                <td>Paid</td>
+                                <td> <span class="status return"> Return </span></td>
+                            </tr>
+                            <tr>
+                                <td>Hp Laptop</td>
+                                <td>$6000</td>
+                                <td>Due</td>
+                                <td> <span class="status inprogress"> In Progress </span></td>
+                            </tr>
+                            <tr>
+                                <td>Watch</td>
+                                <td>$100</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Delivered </span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Samasung Galaxy Phone </td>
+                                <td>$7500</td>
+                                <td>Due</td>
+                                <td> <span class="status pending"> Pending </span></td>
+                            </tr>
+
+                            <tr>
+                                <td>WasteLand Beg</td>
+                                <td>$60</td>
+                                <td>Paid</td>
+                                <td> <span class="status return"> Return </span></td>
+                            </tr>
+                            <tr>
+                                <td>Washing Machine</td>
+                                <td>$5000</td>
+                                <td>Due</td>
+                                <td> <span class="status inprogress"> In Progress </span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img1.jpg" alt="img">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Victor <br><span>Noida</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img2.jpg" alt="img" >
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>Toxic <br><span>LalaLand</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img3.jpg" alt="img">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>Rein <br><span>Punjab</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img4.jpg" alt="img">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>Pool <br><span>Dehradun</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img5.jpg" alt="img">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>Void <br><span>RamNagar</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img6.jpg" alt="img">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>Pushepesh <br><span>Mumbai</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imdbx">
+                                        <img src="img/img7.jpg" alt="img">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Hamid <br><span>Delhi</span></h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navbar = document.querySelector('.navbar');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
